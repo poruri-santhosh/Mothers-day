@@ -1,0 +1,88 @@
+/* General Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #15f19d;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Container Styling */
+.container {
+  background-color: #00e7eb;
+  padding: 30px;
+  border-radius: 20px;
+  border: 5px solid #e4e8ea;
+  box-shadow: 0 0 20px rgba(186, 174, 180, 0.3);
+  width: 90%;
+  max-width: 400px;
+  margin-top: 50px;
+}
+
+/* Header */
+.surprise-header {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5em;
+  color: #06047e;
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Glowing Text Animation */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
+  }
+  100% {
+    text-shadow: 0 0 20px #ff66cc, 0 0 30px #ff66cc;
+  }
+}
+
+/* Mom's Photo Styling */
+.mom-photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 60%;
+  margin-top: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.mom-photo:hover {
+  transform: scale(1.05);
+}
+
+/* Message Styling */
+.special-message {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Hidden Surprise */
+.hidden-surprise {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.5s ease-out, transform 1.5
+}
+.reveal-button{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgb(133, 131, 131);
+  border-width: 2px;
+  border-color: rgba(215, 215, 223, 0.822);
+  font-weight: bolder;
+  cursor: pointer;
+  margin-top: 15px;
+
+}
